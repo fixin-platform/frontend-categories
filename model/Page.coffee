@@ -26,7 +26,7 @@ class Pages.Page
 Pages.Helpers =
   childrenUrlPattern: (parentUrl) ->
     parentUrlWithoutLastSlash = parentUrl.replace /\/$/, ""
-    new RegExp(RegExp.escape(parentUrlWithoutLastSlash) + "\/[^\/]+")
+    new RegExp("^" + RegExp.escape(parentUrlWithoutLastSlash) + "\/[^\/]+$")
   parentUrl: (childUrl) ->
     childUrl.substr(0, childUrl.lastIndexOf("/"))
   siblingsUrlPattern: (siblingUrl) ->

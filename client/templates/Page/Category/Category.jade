@@ -16,8 +16,10 @@ template(name="Category")
                   +connection
           .panel-body
             .panel-body-wrap
-              form
-                input.form-control.filter(type="text" placeholder="Search" value=filter)
+              //Doesn't work after I've switched to _i18n
+              //well, we don't need that anyway for now
+              //form
+              //  input.form-control.filter(type="text" placeholder="Search" value=filter)
               ul.list-unstyled
                 each items
                   li.col-md-3.col-sm-3.col-xs-3.item-wrap
