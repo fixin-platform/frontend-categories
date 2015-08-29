@@ -1,4 +1,4 @@
 Fixtures.push Pages,
-  Index:
+  Home:
     url: "/"
     cls: "Category"
