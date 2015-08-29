@@ -22,6 +22,7 @@ class Pages.Page
 PageMatch = ->
   _id: Match.StringId
   url: String
+  cls: String
   position: Match.Integer
   updatedAt: Date
   createdAt: Date
