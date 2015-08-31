@@ -1,0 +1,26 @@
+template(name="Landing")
+  .Landing.panel-body
+    h1.h3 {{_i18n.title}}
+    .row
+      .col-md-6.col-xs-12
+        p Shorten multiple URLs at once using this helpful tool.
+        ul.fa-ul
+          li
+            .fa-li.fa.fa-check
+            | Works fast
+          li
+            .fa-li.fa.fa-check
+            | Setup in minutes
+          li
+            .fa-li.fa.fa-check
+            | No programming required <i>(we already did that part :) )</i>
+        p
+          button.btn.btn-primary.btn-lg Start shortening now
+      .col-md-6.col-xs-12
+        .embed-responsive.embed-responsive-16by9
+          iframe.embed-responsive-item(src='//www.youtube.com/embed/zpOULjyy-n8?rel=0', allowfullscreen='')
+    .row
+      .col-xs-12
+        .brands.text-center
+          img(src="/packages/main/public/images/bitly.png")
+          img(src="/packages/main/public/images/google-spreadsheets.png")
