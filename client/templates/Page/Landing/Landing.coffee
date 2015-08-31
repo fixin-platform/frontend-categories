@@ -4,4 +4,9 @@ Template.Landing.helpers
 Template.Landing.onCreated ->
 
 Template.Landing.events
-#  "click .selector": (event, template) ->
+  "click .cta": grab encapsulate (event, template) ->
+    return if Spire.requireLogin()
+    recipe = @generateRecipe(
+      userId: Meteor.userId()
+    )
+    FlowRouter.go(recipe.url())

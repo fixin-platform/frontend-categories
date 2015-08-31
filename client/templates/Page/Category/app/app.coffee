@@ -6,9 +6,6 @@ Template.app.helpers
   userRecipes: ->
     Recipes.find({appId: @_id, isAutorun: false}, {sort: {createdAt: -1}})
 
-Template.app.onCreated ->
-  @subscribe("Recipes")
-
 Template.app.onRendered ->
   @$("input").first().focus()
   @$("form.add-blueprint").formValidation(
