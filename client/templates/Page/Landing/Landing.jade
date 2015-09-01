@@ -15,7 +15,7 @@ template(name="Landing")
             .fa-li.fa.fa-check
             | No programming required <i>(we already did that part :) )</i>
         p
-          button.btn.btn-primary.btn-lg.cta Start shortening now
+          a(href="{{url}}/recipes").btn.btn-primary.btn-lg.cta Start shortening now
       .col-md-6.col-xs-12
         .embed-responsive.embed-responsive-16by9
           iframe.embed-responsive-item(src='//www.youtube.com/embed/zpOULjyy-n8?rel=0', allowfullscreen='')
@@ -36,7 +36,7 @@ template(name="Landing")
       .col-xs-12
         .text-center
           p
-            button.btn.btn-default.btn-lg.cta Run bulk shortener
+            a(href="{{url}}/recipes").btn.btn-default.btn-lg.cta Open bulk shortener
     .row.breathe
       .col-xs-12
         .brands.text-center

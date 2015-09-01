@@ -1,12 +1,10 @@
 Template.Landing.helpers
-#  helper: ->
 
 Template.Landing.onCreated ->
 
 Template.Landing.events
-  "click .cta": grab encapsulate (event, template) ->
-    return if Spire.requireLogin()
-    recipe = @generateRecipe(
-      userId: Meteor.userId()
-    )
-    FlowRouter.go(recipe.url())
+#  "click .cta": grab encapsulate (event, template) ->
+#    cta()
+
+#cta = ->
+#  return if Spire.requireLogin()
