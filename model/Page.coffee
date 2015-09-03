@@ -38,7 +38,7 @@ Pages.Helpers =
 #      url += "/" + parent.slug
 #    url
 
-PageMatch = (Page) ->
+Pages.match = ->
   _id: Match.StringId
   url: String
   cls: String
@@ -61,7 +61,7 @@ Pages.before.insert (userId, Page) ->
       if LastPage then LastPage.position + 1 else 1
     updatedAt: now
     createdAt: now
-  check Page, PageMatch(Page)
+  check Page, Pages.match()
   PagePreSave.call(@, userId, Page)
   true
 
