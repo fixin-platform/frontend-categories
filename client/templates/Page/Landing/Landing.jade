@@ -1,24 +1,30 @@
 template(name="Landing")
   .Landing.panel-body
-    h1.h3 {{_i18n.name}}
-    .row.breathe
-      .col-md-6.col-xs-12
-        p Get <strong>analytics</strong> and <strong>backup</strong> for you Bitly links by exporting them to Google Spreadsheet.
-        ul.fa-ul
-          li
-            .fa-li.fa.fa-check
-            | Enjoy automatic daily export
-          li
-            .fa-li.fa.fa-check
-            | Trigger export manually anytime
-          li
-            .fa-li.fa.fa-check
-            | No programming required <i>(we already did that part :) )</i>
-        p
+    h1.h3.text-center {{_i18n.name}}
+    .row.breathe-deep
+      .col-xs-12
+        p.text-center
+          .fa.fa-hand-o-right.text-muted
+          | &nbsp;
           a(href="{{url}}/recipes").btn.btn-primary.btn-lg.cta Run export now
-      .col-md-6.col-xs-12
-        .embed-responsive.embed-responsive-16by9
-          iframe.embed-responsive-item(src='//www.youtube.com/embed/OCWj5xgu5Ng?rel=0', allowfullscreen='')
+          | &nbsp;
+          .fa.fa-hand-o-left.text-muted
+    //.row.breathe
+    //  .col-md-6.col-xs-12
+    //    p Get <strong>analytics</strong> and <strong>backup</strong> for you Bitly links by exporting them to Google Spreadsheet.
+    //    ul.fa-ul
+    //      li
+    //        .fa-li.fa.fa-check
+    //        | Enjoy automatic daily export
+    //      li
+    //        .fa-li.fa.fa-check
+    //        | Trigger export manually anytime
+    //      li
+    //        .fa-li.fa.fa-check
+    //        | No programming required <i>(we already did that part :) )</i>
+    //  .col-md-6.col-xs-12
+    //    .embed-responsive.embed-responsive-16by9
+    //      iframe.embed-responsive-item(src='//www.youtube.com/embed/OCWj5xgu5Ng?rel=0', allowfullscreen='')
     .row.breathe
       .col-sm-4.col-xs-12.text-center
         p
@@ -27,11 +33,11 @@ template(name="Landing")
       .col-sm-4.col-xs-12.text-center
         p
           img(src="/packages/foundation/public/images/icons/ballicons/clock.png")
-        p <strong>Enable automatic export</strong> <br /> to Google Spreadsheet
+        p <strong>Enable automatic daily export</strong> <br /> to Google Spreadsheet
       .col-sm-4.col-xs-12.text-center
         p
           img(src="/packages/foundation/public/images/icons/ballicons/wine.png")
-        p <strong>See your data appear</strong> <br /> on the first sheet. Celebrate!
+        p <strong>See links, clicks and referrers</strong> <br /> right in the spreadsheet. Celebrate!
     .row.breathe
       .col-xs-12
         .text-center
